@@ -31,6 +31,7 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
     "deploy": "sh ./publish.sh",
     "format": "prettier **/**/*.ts --ignore-path ./.prettierignore --write",
     "audit:convert": "yarn-audit-fix --flow=convert",
